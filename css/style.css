@@ -1,0 +1,21 @@
+header{
+    background-image: url("../img/banner_bg.png");
+    background-size: cover;
+}
+.container{
+    max-width: 1280px;
+    display: flex;
+    justify-content: center;
+}
+.header__panel{
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+header h1{
+    margin-bottom: 66px;
+    color: #fff;
+    font-size: 38px;
+    line-height: 46px;
+    font-family: Montserrat,monospace;
+    font-weight: bold;
+}
