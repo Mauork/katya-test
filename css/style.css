@@ -70,6 +70,13 @@ header a {
   font-weight: bold;
 }
 
+.sort__selector-btn {
+    width: 15px;
+    height: 15px;
+
+    transition: transform .2s;
+}
+
 .sort__selector-btn_up {
     transform: rotate(180deg);
 }
