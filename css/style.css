@@ -70,6 +70,10 @@ header a {
   font-weight: bold;
 }
 
+.sort__selector-btn_up {
+    transform: rotate(180deg);
+}
+
 footer {
   margin-top: 50px;
   color: #fff;
