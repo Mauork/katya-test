@@ -69,14 +69,41 @@ header a {
   line-height: 46px;
   font-weight: bold;
 }
-
+.age__selector{
+  margin-left: 55px;
+}
+.price__selector{
+  margin-left: 48px;
+}
+.sort-section{
+  display: flex;
+  align-items: center;
+}
+.sort__info{
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+}
 .sort__selector-btn {
     width: 15px;
     height: 15px;
 
     transition: transform .2s;
 }
-
+.age__selector .sort__selector-btn {
+  margin-left: 24px;
+}
+.price__selector .sort__selector-btn{
+  margin-left: 14px;
+}
+main{
+  margin-top: 37px;
+}
+.sort__selector-title{
+  font-size: 18px;
+  line-height: 22px;
+  cursor: default;
+}
 .sort__selector-btn_up {
     transform: rotate(180deg);
 }
