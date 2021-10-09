@@ -258,15 +258,19 @@ main .container {
   cursor: pointer;
 }
 .go-up {
+  display: none;
+
   width: 59px;
   height: 59px;
   background-color: #6ebbd3;
-  display: flex;
+
   justify-content: center;
   align-items: center;
-  position: absolute;
-  bottom: 0;
-  right: 0;
+  
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+
   transition: background-color 0.25s;
   cursor: pointer;
 }
@@ -422,6 +426,14 @@ footer .container {
     margin: 0 auto;
     width: 80%;
   }
+
+  .go-up {
+    width: 40px;
+    height: 40px;
+
+    bottom: 20px;
+    right: 20px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -498,5 +510,10 @@ footer .container {
   .form__submit {
     padding: 16px 77px;
     margin: 15px 0 0;
+  }
+
+  .go-up {
+    bottom: 5px;
+    right: 5px;
   }
 }
