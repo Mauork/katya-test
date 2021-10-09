@@ -9,6 +9,8 @@ a {
 .container {
   width: 1280px;
   margin: 0 auto;
+
+  transition: width .25s;
 }
 
 header {
@@ -70,75 +72,75 @@ header a {
   font-weight: bold;
 }
 
-.age__selector{
+.age__selector {
   margin-left: 55px;
 }
 
-.price__selector{
+.price__selector {
   margin-left: 48px;
 }
 
-.sort-section{
+.sort-section {
   display: flex;
   align-items: center;
 }
 
-.sort__info{
+.sort__info {
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
 }
 
 .sort__selector-btn {
-    width: 15px;
-    height: 15px;
+  width: 15px;
+  height: 15px;
 
-    transition: transform .2s;
+  transition: transform 0.2s;
 }
 
 .age__selector .sort__selector-btn {
   margin-left: 24px;
 }
 
-.price__selector .sort__selector-btn{
+.price__selector .sort__selector-btn {
   margin-left: 14px;
 }
 
-main{
+main {
   margin-top: 37px;
 }
 
-main .container{
+main .container {
   display: flex;
   flex-direction: column;
   position: relative;
 }
 
-.sort__selector-title{
+.sort__selector-title {
   font-size: 18px;
   line-height: 22px;
   cursor: default;
 }
 
 .sort__selector-btn_up {
-    transform: rotate(180deg);
+  transform: rotate(180deg);
 }
-.cat-list{
+.cat-list {
   margin-top: 38px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 .cat-card {
-width: 30%;
-position: relative;
-margin-bottom: 27px;
+  width: 30%;
+  position: relative;
+  margin-bottom: 27px;
 }
 .card__discount {
   position: absolute;
   top: 34px;
   left: 38px;
-  background: #E62D2D;
+  background: #e62d2d;
   border-radius: 10px;
   padding: 9px 18px;
   color: #fff;
@@ -147,26 +149,27 @@ margin-bottom: 27px;
   cursor: default;
   display: none;
 }
-.card__discount-shown{
+.card__discount-shown {
   display: block;
 }
 .card__favorite {
-position: absolute;
-top: 34px;
-right: 32px;
-width: 46px;
-height: 46px;
-background: url("../img/heart.svg");
-background-repeat: no-repeat;
-background-position: center center;
-opacity: .5;
-transition: opacity .25s;
+  position: absolute;
+  top: 34px;
+  right: 32px;
+  width: 46px;
+  height: 46px;
+  background: url("../img/heart.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 0.5;
+  transition: opacity 0.25s;
 }
-.card__favorite-selected, .card__favorite:hover{
+.card__favorite-selected,
+.card__favorite:hover {
   opacity: 1;
 }
 .card__button {
-  background: #6EBBD3;
+  background: #6ebbd3;
   color: #fff;
   padding: 22px 55px;
   text-align: center;
@@ -175,20 +178,23 @@ transition: opacity .25s;
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
-  transition: background .25s;
+  transition: background 0.25s;
   cursor: pointer;
 }
-.card__button-purchased, .card__button:hover{
-  background: #1F2021;
+.card__button-purchased,
+.card__button:hover {
+  background: #1f2021;
 }
-.card__img, .card__img img{
+.card__img,
+.card__img img {
   width: 100%;
 }
 .card__content {
-  background: #F3F3F3;
+  background: #f3f3f3;
   padding: 29px;
 }
-.card__content-title, .card__content-price{
+.card__content-title,
+.card__content-price {
   font-weight: bold;
   font-size: 24px;
   line-height: 29px;
@@ -196,7 +202,7 @@ transition: opacity .25s;
 .card__content-info {
   margin-top: 22px;
   margin-bottom: 22px;
-  border-left: 4px solid #6EBBD3;
+  border-left: 4px solid #6ebbd3;
   padding-left: 18px;
   display: flex;
   align-items: center;
@@ -218,37 +224,37 @@ transition: opacity .25s;
 .info__paws {
   margin-left: 33px;
 }
-.show_more_button{
+.show_more_button {
   margin: 41px auto 0;
   padding: 24px 129px;
   background-color: transparent;
-  border: 1px solid #CACACA;
+  border: 1px solid #cacaca;
   box-sizing: border-box;
   border-radius: 10px;
   font-size: 14px;
   line-height: 17px;
-  transition: background .25s,color .25s;
+  transition: background 0.25s, color 0.25s;
 }
-.show_more_button:hover{
-  background-color: #CACACA;
+.show_more_button:hover {
+  background-color: #cacaca;
   color: #fff;
   cursor: pointer;
 }
-.go-up{
+.go-up {
   width: 59px;
   height: 59px;
-  background-color: #6EBBD3;
+  background-color: #6ebbd3;
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
   bottom: 0;
   right: 0;
-  transition: background-color .25s;
+  transition: background-color 0.25s;
   cursor: pointer;
 }
-.go-up:hover{
-background-color: #1F2021;
+.go-up:hover {
+  background-color: #1f2021;
 }
 
 footer {
@@ -292,7 +298,7 @@ footer .container {
 
 .form__input,
 .form__submit {
-    border: none;
+  border: none;
 
   border-radius: 10px;
   font-size: 14px;
@@ -354,4 +360,111 @@ footer .container {
 
   font-size: 14px;
   line-height: 17px;
+}
+
+@media screen and (max-width: 1279px) {
+  .container {
+    width: 768px;
+  }
+
+  .header__navigation {
+    margin-left: 60px;
+  }
+
+  .header__navigation a:not(:first-of-type) {
+    margin-left: 35px;
+  }
+
+  .cat-card {
+    width: 49%;
+  }
+
+  footer .container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footer__info,
+  .footer__form {
+    padding: 30px;
+    margin: 0 auto;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 320px;
+  }
+
+  .header__navigation {
+    margin: 40px auto;
+    display: flex;
+  }
+
+  .header__panel,
+  .header__navigation,
+  .sort-section,
+  .card__content-info {
+    flex-direction: column;
+  }
+
+  .header__navigation a {
+    font-size: 24px;
+  }
+
+  .header__navigation a:not(:first-of-type) {
+    margin-left: 0;
+    margin-top: 24px;
+  }
+
+  .header__contacts {
+    margin-left: 0;
+  }
+
+  .header__contacts p,
+  .header__title {
+    text-align: center;
+  }
+
+  .header__title {
+    font-size: 30px;
+  }
+
+  .cat-card,
+  .info__block {
+    width: 100%;
+  }
+
+  .info__age,
+  .info__paws,
+  .sort__selector {
+    margin: 10px 0 0;
+  }
+
+  .info__age {
+    text-align: left;
+  }
+
+  .show_more_button {
+    padding: 14px 28px;
+  }
+
+  .footer__info h2 {
+    font-size: 32px;
+  }
+
+  .footer__info p {
+    font-size: 18px;
+  }
+
+  .form__input {
+    padding: 16px 12px;
+    width: 90%;
+  }
+
+  .form__submit {
+    padding: 16px 77px;
+    margin: 15px 0 0;
+  }
 }
